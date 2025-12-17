@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Project</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="js/content.js" defer></script>
+    
+</head>
+<body>
+    <div class="game-container">
+        <h1>Ram's Scrabble Game!</h1>
+        <div class="score-display">Total Score: <span id="total-score">0</span></div>
+        <div class="score-display">Current Score: <span id="current-score">0</span></div>
+
+        <div class="instructions">
+            <h3>How to Play:</h3>
+            <ul>
+                <li>Drag letter tiles from your rack to the board squares</li>
+                <li>Place tiles to form a word (left to right)</li>
+                <li>Bonus squares multiply letter or word values</li>
+                <li>Use "New Tiles" to play your word and add it to your total score</li>
+                <li>Use "Reset Board" to clear and try again</li>
+            </ul>
+        </div>
+
+        <div class="board-container">
+            <div class="board-row" id="board-row"></div>
+        </div>
+
+        <div class="word-display">Current Word: <span id="current-word">-</span></div>
+        
+        <div class="tile-rack-container">
+            <div class="rack-label">Your Letter Tiles</div>
+            <div class="tile-rack" id="tile-rack"></div>
+        </div>
+
+        <div class="controls">
+            <button id="reset-btn" class="danger">Reset Board</button>
+            <button id="new-tiles-btn">New Tiles</button>
+        </div>
+    </div>
+</body>
+</html>
