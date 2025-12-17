@@ -43,7 +43,7 @@ h1 {
 }
 
 .board-row {
-    background-image: url('/graphics_data/Scrabble_Board_OneLine.png');
+    background-image: url('graphics_data/Scrabble_Board_OneLine.png');
     display: flex;
     background-size: cover;
     background-position: center;
@@ -97,7 +97,7 @@ h1 {
     padding: 15px 10px;
     background-color: transparent;
     border-radius: 8px;
-    background-image: url('/graphics_data/scrabble-tile-holder.png');
+    background-image: url('graphics_data/scrabble-tile-holder.png');
     background-size: contain; 
     background-position: center; 
     background-repeat: no-repeat;
