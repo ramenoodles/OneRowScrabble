@@ -128,9 +128,9 @@ function initializeTiles(tiles) {// Initialize the player's tile rack and implem
     tiles.forEach((tile, index) => {
         const $tile = $('<div>').addClass('tile').attr('data-letter', tile.letter).attr('data-value', tile.value).attr('data-tile-id', `tile-${index}`);
         if (tile.letter === '_') { // Handle blank tile differently
-            $tile.css('background-image', `url('OneRowScrabble/graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg')`);
+            $tile.css('background-image', `url('graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg')`);
         } else {
-            $tile.css('background-image', `url('OneRowScrabble/graphics_data/Scrabble_Tiles/Scrabble_Tile_${tile.letter}.jpg')`);
+            $tile.css('background-image', `url('graphics_data/Scrabble_Tiles/Scrabble_Tile_${tile.letter}.jpg')`);
         }
         $rack.append($tile);
     });
