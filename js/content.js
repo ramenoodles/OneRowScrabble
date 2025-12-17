@@ -203,9 +203,9 @@ function playWord() {// Finalize the played word, update scores, and draw new ti
     newTiles.forEach((tile, index) => {
         const $tile = $('<div>').addClass('tile').attr('data-letter', tile.letter).attr('data-value', tile.value).attr('data-tile-id', `tile-new-${index}`);
         if (tile.letter === '_') {
-            $tile.css('background-image', `url('/graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg')`);
+            $tile.css('background-image', `url('graphics_data/Scrabble_Tiles/Scrabble_Tile_Blank.jpg')`);
         } else {
-            $tile.css('background-image', `url('/graphics_data/Scrabble_Tiles/Scrabble_Tile_${tile.letter}.jpg')`);
+            $tile.css('background-image', `url('graphics_data/Scrabble_Tiles/Scrabble_Tile_${tile.letter}.jpg')`);
         }
         $('#tile-rack').append($tile);
         $tile.draggable({
